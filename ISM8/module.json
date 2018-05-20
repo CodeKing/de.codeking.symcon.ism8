@@ -1,0 +1,21 @@
+{
+  "id": "{0C6ECED2-07C1-475A-9DCA-0999882B53FB}",
+  "name": "ISM8",
+  "type": 2,
+  "vendor": "Wolf GmbH",
+  "aliases": [
+    "Wolf ISM8 Gateway"
+  ],
+  "parentRequirements": [
+    "{79827379-F36E-4ADA-8A95-5F8D1DC92FA9}"
+  ],
+  "childRequirements": [
+    "{C2E295FC-4338-4BE1-AC57-62633C9E4CE3}"
+  ],
+  "implemented": [
+    "{018EF6B5-AB94-40C6-AA53-46943E824ACF}",
+    "{73188E44-8BBA-4EBF-8BAD-40201B8866B9}",
+    "{C2E295FC-4338-4BE1-AC57-62633C9E4CE3}"
+  ],
+  "prefix": "ISM8"
+}

@@ -1,0 +1,39 @@
+{
+  "elements": [
+    {
+      "type": "Label",
+      "label": "___ [ Settings ] _______________________________________________________________________________________"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "port",
+      "caption": "Target Port"
+    },
+    {
+      "type": "SelectCategory",
+      "name": "category_id",
+      "caption": "Category"
+    },
+    {
+      "type": "Label",
+      "label": "___ [ Logging ] ________________________________________________________________________________________"
+    },
+    {
+      "type": "CheckBox",
+      "name": "log",
+      "caption": "enable logging"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Button",
+      "label": "Read Data",
+      "onClick": "ISM8_GetData($id);"
+    },
+    {
+      "type": "Button",
+      "label": "TEST",
+      "onClick": "ISM8_Test($id);"
+    }
+  ]
+}

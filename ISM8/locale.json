@@ -1,0 +1,16 @@
+{
+  "translations": {
+    "de": {
+      "___ [ Logging ] ________________________________________________________________________________________": "___ [ Debug Log ] _____________________________________________________________________________________________",
+      "enable logging": "Log Meldungen aktivieren",
+      "Read Data": "Daten auslesen",
+      "Target Port": "Zielserver-Port",
+      "off": "aus",
+      "on": "an",
+      "opened": "geöffnet",
+      "closed": "geschlossen",
+      "yes": "ja",
+      "no": "nein"
+    }
+  }
+}

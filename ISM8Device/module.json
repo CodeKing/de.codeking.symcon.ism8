@@ -1,0 +1,17 @@
+{
+  "id": "{D798AEDC-ADB0-4275-8E74-D6C226ADEF4E}",
+  "name": "ISM8Device",
+  "type": 3,
+  "vendor": "Wolf GmbH",
+  "aliases": [
+    "Wolf ISM8 Gerät"
+  ],
+  "parentRequirements": [
+    "{C2E295FC-4338-4BE1-AC57-62633C9E4CE3}"
+  ],
+  "childRequirements": [],
+  "implemented": [
+    "{6DFABA28-7FF4-438D-82FE-951F5460DEDB}"
+  ],
+  "prefix": "ISM8Device"
+}
