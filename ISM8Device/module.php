@@ -8,6 +8,10 @@ if (!defined('ISM_SPLITTER')) {
     define('ISM_SPLITTER', '{0C6ECED2-07C1-475A-9DCA-0999882B53FB}');
 }
 
+if (!defined('ISM_SPLITTER_RX')) {
+    define('ISM_SPLITTER_RX', '{C2E295FC-4338-4BE1-AC57-62633C9E4CE3}');
+}
+
 /**
  * Class ISM8
  * IP-Symcon Wolf ISM8 device module

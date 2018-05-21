@@ -149,7 +149,7 @@ class ISM8 extends Module
                 'value' => $data['value'],
                 'identifier' => $identifier,
                 'position' => $data['id'],
-                'custom_profile' => $this->getProfile($data['type'], $data['unit'])
+                'custom_profile' => WolfProfiles::getProfile($data['type'], $data['unit'])
             ]);
         }
     }
@@ -173,14 +173,6 @@ class ISM8 extends Module
     {
         // request data from ISM8
         $this->RequestData();
-    }
-
-    public function Test()
-    {
-        $value = $this->DPT_Value_Temp(-30, true);
-
-        var_dump($value);
-        exit;
     }
 
     /***********************************************************
