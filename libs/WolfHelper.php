@@ -107,6 +107,8 @@ trait WolfHelper
                 $value = call_user_func_array([__CLASS__, $datapoint['type']], [$value, true]);
             }
 
+            var_dump($value);
+
             if ($value !== false) {
                 $header = '0620F080';
                 $frame_size = 20; // 0014
