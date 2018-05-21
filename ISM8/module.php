@@ -135,12 +135,18 @@ class ISM8 extends Module
         $this->_log('Wolf Data', json_encode($telegramData));
 
         // loop telegram data & save values
+        $children_ids = [];
         foreach ($telegramData AS $data) {
             // create instance by device type
             $instance_id = $this->CreateInstanceByIdentifier(ISM_DEVICE, $this->category_id, $data['device'], $data['device']);
 
+            // append to children ids
+            if (!in_array($instance_id, $children_ids)) {
+                $children_ids[] = $instance_id;
+            }
+
             // build identifier by datapoint id & type
-            $identifier = $data['id'] . '_' . $data['type'] . ($data['in'] ? '_action' : '');
+            $identifier = $data['id'] . '_' . $data['type'] . ($data['rw'] === 'rw' ? '_action' : '');
 
             // create variable or update value
             $this->CreateVariableByIdentifier([
@@ -151,6 +157,11 @@ class ISM8 extends Module
                 'position' => $data['id'],
                 'custom_profile' => WolfProfiles::getProfile($data['type'], $data['unit'])
             ]);
+        }
+
+        // loop children ids and apply changes
+        foreach ($children_ids AS $instance_id) {
+            IPS_ApplyChanges($instance_id);
         }
     }
 

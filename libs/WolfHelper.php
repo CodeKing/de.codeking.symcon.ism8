@@ -80,8 +80,7 @@ trait WolfHelper
                         'name' => $datapoint['datapoint'],
                         'type' => $datapoint['type'],
                         'value' => $value,
-                        'out' => $datapoint['out'],
-                        'in' => $datapoint['in'],
+                        'rw' => $datapoint['rw'],
                         'unit' => $datapoint['unit']
                     ];
                 }
